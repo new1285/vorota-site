@@ -3,51 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Откатные и распашные ворота — производство в Беларуси</title>
+  <title>ВОРОТА ЗДЕСЬ! — откатные и распашные ворота в Беларуси</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
       margin: 0;
       padding: 0;
+      background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
       color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
     }
 
+    /* ===== ШАПКА ===== */
     header {
-      background-color: #2b2b2b;
-      color: white;
-      width: 100%;
-      padding: 15px 0;
-      font-size: 20px;
-      letter-spacing: 0.5px;
+      background-color: #000;
+      color: #fff;
+      padding: 40px 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
 
+    header h1 {
+      font-size: 42px;
+      margin: 0;
+      color: white;
+      text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    }
+
+    header h2, header h3 {
+      margin: 5px 0;
+      color: white;
+      text-shadow: 0 0 8px red;
+    }
+
+    header h2 {
+      font-size: 22px;
+    }
+
+    header h3 {
+      font-size: 18px;
+    }
+
+    /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
     section {
       max-width: 900px;
-      padding: 20px;
-    }
-
-    h1 {
-      color: #222;
-      font-size: 26px;
-      margin-bottom: 10px;
+      margin: 0 auto;
+      padding: 25px;
+      text-align: center;
     }
 
     h2 {
       color: #444;
-      font-size: 20px;
+      font-size: 22px;
       margin-top: 25px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      line-height: 1.6;
-      font-size: 17px;
-      text-align: justify;
     }
 
     ul {
@@ -55,6 +67,12 @@
       font-size: 17px;
       line-height: 1.6;
       padding-left: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 17px;
+      text-align: justify;
     }
 
     img {
@@ -66,6 +84,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
 
+    /* ===== КНОПКИ ===== */
     .cta {
       background-color: #0078d7;
       color: white;
@@ -77,7 +96,7 @@
       transition: 0.3s;
       text-decoration: none;
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px;
     }
 
     .cta:hover {
@@ -94,16 +113,26 @@
       border-top: 1px solid #ddd;
       margin-top: 20px;
     }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 32px; }
+      header h2 { font-size: 18px; }
+      header h3 { font-size: 16px; }
+      .cta { font-size: 16px; padding: 10px 20px; }
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <b>Собственное производство ворот в Беларуси</b>
+    <h1>ВОРОТА ЗДЕСЬ!</h1>
+    <h2>Отправка по всей стране</h2>
+    <h3>Собственное производство — низкие цены</h3>
   </header>
 
   <section>
-    <h1>Откатные и распашные ворота под ваши размеры</h1>
-    <p>Мы изготавливаем прочные и аккуратные ворота под любые проёмы. Используем только качественное сырьё и профиль с толщиной стенки 2 мм. Вся продукция производится на собственном оборудовании.</p>
+    <h2>Откатные и распашные ворота под ваши размеры</h2>
+    <p>Мы производим ворота для частных домов, предприятий и дачных участков. Изготавливаем по индивидуальным размерам, используя только качественное сырьё и профиль толщиной 2 мм. Вся продукция производится на собственном оборудовании, что позволяет держать минимальные цены при высоком качестве.</p>
 
     <ul>
       <li>Рамка из профиля 60×40×2 мм</li>
@@ -115,13 +144,17 @@
     </ul>
 
     <h2>Чертёж стандартных ворот</h2>
-    <img src="drawing.jpg?v=3" alt="Чертёж откатных ворот">
+    <img src="drawing.jpg?v=5" alt="Чертёж ворот">
 
-    <a class="cta" href="tel:+375293580041">📞 Позвонить: +375 29 358 00 41</a>
+    <div>
+      <a class="cta" href="tel:+375293580041">📞 Позвонить</a>
+      <a class="cta" href="https://t.me/NewOleg" target="_blank">💬 Написать в Telegram</a>
+    </div>
   </section>
 
   <footer>
     © 2025 Производство ворот. Беларусь.
   </footer>
+
 </body>
 </html>
